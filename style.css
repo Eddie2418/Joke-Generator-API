@@ -1,0 +1,57 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Rubik", sans-serif;
+}
+
+/* Background colour*/
+body{
+    background-color: blue;
+}
+
+/* This is the black border we created  */
+.wrapper{
+    width: 80vmin;
+    padding: 50px 40px;
+    background-color: #15161a;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 5px;
+    box-shadow: 5px;
+    box-shadow: 20px 20px 40px rgba(97, 63, 0, 0.4);
+}
+
+/* This is the smile face  */
+span{
+    display: block;
+    text-align: center;
+    font-size: 100px;
+}
+
+p{
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: 400;
+    text-align: center;
+    word-wrap: break-word;
+    line-height: 35px;
+    margin: 30px 0;
+}
+
+
+button{
+    display: block;
+    background-color: white;
+    border: none;
+    padding: 5px;
+    font-size: 30px;
+    color: black;
+    font-weight: 700;
+    padding: 12px 25px;
+    margin: 0 auto;
+    border-radius: 5px;
+    cursor: pointer;
+}
