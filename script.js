@@ -1,6 +1,4 @@
 // set a comstant varaible 
-//We declare 3 const
-
 //used to store a refrence to an element on the web page where the joke will be displayed 
 //This will find the element in the DOM (Document Object Model) with an id of "joke".
 const jokeContainer = document.getElementById("joke")
@@ -17,6 +15,8 @@ const url = "https://v2.jokeapi.dev/joke/Any?blacklistFlags=nsfw,religious,polit
 
 let getJoke = () => {
 
+    jokeContainer.classList.remove("fade");
+
     //This function uses the fetch function to send a request to the joke API and retrieve a joke.
     fetch(url)
 
@@ -29,6 +29,7 @@ let getJoke = () => {
     //joke, which is the joke that was retrieved from the API.
     .then(item => {
         jokeContainer.textContent = `${item.joke}`;
+        jokeContainer.classList.add("fade")
 });
 }
 btn.addEventListener("click", getJoke);
